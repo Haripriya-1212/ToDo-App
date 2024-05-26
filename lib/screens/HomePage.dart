@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo/constants/colours.dart';
 
 class Home extends StatefulWidget{
   @override
@@ -9,7 +10,26 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    throw UnimplementedError();
+    return Scaffold(
+      backgroundColor: tdBGColor,
+      appBar: AppBar(
+        backgroundColor: tdBGColor,
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Icon(Icons.menu, color: tdBlack, size: 30,),
+            Icon(Icons.notifications, color: tdBlack, size: 30)
+          ]
+          ),
+      ),
+      body: Container(
+        child: Column(
+          children: [
+
+          ]
+          ),
+      ),
+    );
   }
 }
 
